@@ -65,59 +65,7 @@ In short, data analysis diagnosed the problem space, while business analysis tra
 
 ---
 
-## 4. Solution Approach (What Changed and Why)
-
-The proposed solution is a **process-led IMS enhancement**, not a technology overhaul. It strengthens how inventory decisions are executed, validated, and recorded across the warehouse network.
-
-### Core Design Principles
-
-**System-Directed, Not System-Replaced**  
-The IMS actively guides routine work such as receiving validation, putaway location selection, replenishment triggers, risk-based cycle count task generation, and automated pick task creation.
-
-**Automation with Control Points**  
-Inventory updates occur automatically only after validated execution steps, ensuring Quantity on Hand (QOH) and Available-to-Promise (ATP) reflect physical reality rather than assumptions.
-
-**Exception-Based Human Intervention**  
-Supervisors are engaged only when predefined tolerance thresholds are breached. Routine activities proceed without manual approval, reducing firefighting and cognitive load.
-
-**Single Version of Inventory Truth**  
-Inventory deductions and adjustments occur at clearly defined control points, eliminating duplicate updates and reconciliation confusion.
-
-**Pragmatic Integration**  
-Data synchronization between IMS, WMS, and OMS is lightweight and reliability-focused, avoiding real-time orchestration complexity.
-
-Together, these principles convert inventory operations from reactive and manual to disciplined, scalable, and auditable while remaining appropriate for a mid-sized e-grocery organization.
-
----
-
-## 5. Key Business Analysis Artifacts & Traceability
-
-This repository contains a complete, industry-aligned set of Business Analysis artifacts demonstrating traceability from problem identification through solution validation.
-
-### Core Deliverables
-
-- **Business Requirements Document (BRD):** Business objectives, rules, requirements, and success metrics  
-- **Process Maps (AS-IS & TO-BE):** Five core inventory processes  
-- **Use Case Diagrams & Specifications:** Automation-first actor–system interactions  
-- **Product Backlog:** Epics, user stories, acceptance criteria, ownership, and KPI alignment  
-- **Traceability Matrix:** Business Requirements → Functional Requirements → User Stories → KPIs  
-- **UAT Artifacts:** Scenarios, test cases, defect log, sign-off templates  
-- **Low-Fidelity Wireframes:** Operational system interactions for requirement clarity  
-
-### Traceability Approach
-
-Every requirement and design decision is traceable back to:
-
-- Data analysis insights  
-- Defined business objectives  
-- Measurable inventory KPIs  
-- Validated operational risks  
-
-This ensures the solution is evidence-driven, testable, and defensible.
-
----
-
-## 6. KPIs and Value Alignment
+## 4. KPIs and Value Alignment
 
 The solution is aligned to a consistent KPI framework used across analysis, design, and validation.
 
@@ -149,6 +97,58 @@ The solution is aligned to a consistent KPI framework used across analysis, desi
 - Top-3 Supplier Quantity Share %  
 
 These KPIs form the basis for benefits realization tracking and post-implementation monitoring.
+
+---
+
+## 5. Solution Approach (What Changed and Why)
+
+The proposed solution is a **process-led IMS enhancement**, not a technology overhaul. It strengthens how inventory decisions are executed, validated, and recorded across the warehouse network.
+
+### Core Design Principles
+
+**System-Directed, Not System-Replaced**  
+The IMS actively guides routine work such as receiving validation, putaway location selection, replenishment triggers, risk-based cycle count task generation, and automated pick task creation.
+
+**Automation with Control Points**  
+Inventory updates occur automatically only after validated execution steps, ensuring Quantity on Hand (QOH) and Available-to-Promise (ATP) reflect physical reality rather than assumptions.
+
+**Exception-Based Human Intervention**  
+Supervisors are engaged only when predefined tolerance thresholds are breached. Routine activities proceed without manual approval, reducing firefighting and cognitive load.
+
+**Single Version of Inventory Truth**  
+Inventory deductions and adjustments occur at clearly defined control points, eliminating duplicate updates and reconciliation confusion.
+
+**Pragmatic Integration**  
+Data synchronization between IMS, WMS, and OMS is lightweight and reliability-focused, avoiding real-time orchestration complexity.
+
+Together, these principles convert inventory operations from reactive and manual to disciplined, scalable, and auditable while remaining appropriate for a mid-sized e-grocery organization.
+
+---
+
+## 6. Key Business Analysis Artifacts & Traceability
+
+This repository contains a complete, industry-aligned set of Business Analysis artifacts demonstrating traceability from problem identification through solution validation.
+
+### Core Deliverables
+
+- **Business Requirements Document (BRD):** Business objectives, rules, requirements, and success metrics  
+- **Process Maps (AS-IS & TO-BE):** Five core inventory processes  
+- **Use Case Diagrams & Specifications:** Automation-first actor–system interactions  
+- **Product Backlog:** Epics, user stories, acceptance criteria, ownership, and KPI alignment  
+- **Traceability Matrix:** Business Requirements → Functional Requirements → User Stories → KPIs  
+- **UAT Artifacts:** Scenarios, test cases, defect log, sign-off templates  
+- **Low-Fidelity Wireframes:** Operational system interactions for requirement clarity  
+
+### Traceability Approach
+
+Every requirement and design decision is traceable back to:
+
+- Data analysis insights  
+- Defined business objectives  
+- Measurable inventory KPIs  
+- Validated operational risks  
+
+This ensures the solution is evidence-driven, testable, and defensible.
 
 ---
 

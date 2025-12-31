@@ -24,9 +24,9 @@ This Business Analysis project defines a targeted IMS enhancement approach focus
 - Replenishment  
 - Order Picking  
 
-The solution deliberately avoids full system replacement or enterprise-grade integrations, aligning instead with MapleDash’s operational maturity and growth trajectory.
+The solution deliberately avoids full system replacement or enterprise-grade integrations, aligning with MapleDash’s operational maturity and growth trajectory.
 
-The outcome is a scalable, disciplined inventory execution model that improves inventory accuracy, fulfillment reliability, and operational efficiency without introducing unnecessary complexity or cost.
+The outcome is a disciplined, scalable inventory execution model that improves inventory accuracy, fulfillment reliability, and operational efficiency without introducing unnecessary complexity or cost.
 
 ---
 
@@ -70,49 +70,13 @@ These insights directly informed:
 - KPI selection and success metrics  
 - Scope and constraints defined in the Business Case and BRD  
 
-In short, data analysis diagnosed the problem space, while business analysis translated those signals into structured requirements and solution design. Together, the two phases form a closed loop that connects data-driven diagnosis to practical, scalable operational change.
+In short, data analysis diagnosed the problem space, while business analysis translated those signals into structured requirements and solution design. 
 
 🔗 **[Data Analysis GitHub Repository](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-Initiative-Data-Analysis-Phase)**
 
 ---
 
-## 4. KPIs and Value Alignment
-
-The solution is aligned to a consistent KPI framework used across analysis, design, and validation.
-
-### Inventory Accuracy & Availability
-- Total Inventory Value
-- Inventory Turnover (Annual)
-- % SKUs Oversold (ATP < 0)  
-- Total ATP Quantity  
-- Days of Inventory  
-- Days of Cover  
-- Median Sellable Coverage  
-
-### Replenishment & Stock Control
-- % SKUs Below ROP  
-- % SKUs Below Safety Stock  
-
-### Risk & Loss Exposure
-- Value Expiring < 30 Days  
-- Avg Unit Cost  
-
-### Demand & Fulfillment Context
-- Total Orders  
-- Total Order Quantity  
-- Avg Daily Orders  
-- Total Revenue  
-
-### Supplier Risk Context (Observed, Not Controlled)
-- On-Time Delivery %  
-- Avg Lead Time  
-- Top-3 Supplier Quantity Share %  
-
-These KPIs form the basis for benefits realization tracking and post-implementation monitoring.
-
----
-
-## 5. Solution Approach
+## 4. Solution Approach
 
 The proposed solution is a **process-led IMS enhancement**, not a technology overhaul. It strengthens how inventory decisions are executed, validated, and recorded across the warehouse network.
 
@@ -137,7 +101,61 @@ Together, these principles convert inventory operations from reactive and manual
 
 ---
 
-## 6. Key Business Analysis Artifacts and Traceability
+## 5. KPIs and Value Alignment
+
+KPI alignment ensures that the proposed solution delivers measurable business value, not just process improvement. The IMS enhancements are explicitly designed to influence execution-driven KPIs that reflect inventory accuracy, availability, and operational stability.
+
+### How the Solution Impacts Key KPIs
+
+- **Inventory Accuracy & Availability**:
+Improved execution discipline and controlled inventory updates reduce ATP overselling, stabilize Total ATP Quantity, and improve Inventory Turnover, Days of Inventory, Days of Cover, and Median Sellable Coverage.
+
+- **Replenishment & Stock Control**:
+System-driven replenishment triggers and exception thresholds reduce the percentage of SKUs falling below Reorder Point (ROP) and Safety Stock.
+
+- **Risk & Loss Exposure**:
+Better putaway discipline, FEFO enforcement, and timely adjustments reduce expiry exposure and protect unit economics.
+
+- **Demand & Fulfillment Context**:
+Improved execution stability supports consistent fulfillment performance under volatile demand without overreactive manual intervention.
+
+- **Supplier Risk Context (Observed, Not Controlled)**:
+Supplier OTD%, lead time, and concentration metrics are monitored as external risk indicators that inform execution safeguards, not as levers controlled by this project.
+
+These KPIs form the basis for post-implementation monitoring and benefits realization tracking.
+
+---
+
+## 6. Estimated Benefits and Expected Outcomes
+
+Based on current-state baselines identified during data analysis, the proposed solution is expected to deliver measurable operational improvements within six months of implementation, assuming disciplined adoption.
+
+### Key Expected Outcomes
+
+- **Improved Inventory Turnover:** Inventory Turnover is expected to increase from 6.5x to approximately 8.0x, driven by better alignment between demand velocity and stock placement, reduced overstocking in slow-moving categories, and faster  execution cycles.  
+- **Reduced ATP Overselling:** The percentage of SKUs oversold (ATP < 0) is expected to drop from 2.9% to below 1%, as inventory updates are synchronized with validated execution events.  
+- **Lower Replenishment Risk:** SKUs below Reorder Point (ROP) are expected to reduce from 17.3% to under 10%, reflecting more timely and consistent replenishment triggers.  
+- **Lean Inventory Position:** Days of Inventory are expected to decrease from 56 days to 50 days or less, improving working capital efficiency without increasing stockout risk.  
+- **Tighter SKU-Level Coverage:** Median Sellable Coverage is expected to reduce from 33 days to approximately 30 days, indicating more balanced inventory distribution across SKUs.  
+
+These outcomes represent execution efficiency gains, not demand growth assumptions, and are consistent with the scope and responsibility of an IMS-led process enhancement initiative.
+
+---
+
+## 7. Why This Is a Realistic SMB Project
+
+This initiative deliberately avoids overengineering:
+
+- Supplier performance issues are observed and mitigated through execution controls, not solved through sourcing changes  
+- Automation is rule-based, not AI-driven  
+- Integrations are lightweight, not real-time enterprise orchestration  
+- Improvements focus on execution discipline, not organizational restructuring  
+
+This makes the solution realistic, defensible, and achievable within MapleDash’s operational context.
+
+---
+
+## 8. Key Business Analysis Artifacts and Traceability
 
 This repository contains a complete, industry-aligned set of Business Analysis artifacts demonstrating traceability from problem identification through solution validation.
 
@@ -151,33 +169,20 @@ This repository contains a complete, industry-aligned set of Business Analysis a
 - **UAT Artifacts:** Scenarios, test cases, defect log, sign-off templates  
 - **Low-Fidelity Wireframes:** Operational system interactions for requirement clarity  
 
-### Traceability Approach
+### Core Deliverables
 
 Every requirement and design decision is traceable back to:
 
-- Data analysis insights  
-- Defined business objectives  
-- Measurable inventory KPIs  
-- Validated operational risks  
+- Data analysis insights
+- Defined business objectives
+- Measurable inventory KPIs
+- Validated operational risks
 
 This ensures the solution is evidence-driven, testable, and defensible.
 
 ---
 
-## 7. Why This Is a Realistic SMB Project
-
-This initiative deliberately avoids overengineering:
-
-- Supplier performance issues are observed and mitigated, not solved through sourcing changes  
-- Automation is rule-based, not AI-driven  
-- Integrations are lightweight, not real-time enterprise orchestration  
-- Improvements focus on execution discipline, not organizational restructuring  
-
-This makes the solution realistic, defensible, and achievable within MapleDash’s operational context.
-
----
-
-## 8. Repository Navigation and Links
+## 9. Repository Navigation and Links
 
 - **[Data Analysis Phase Repository](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-Initiative-Data-Analysis-Phase)**  
 - Power BI Dashboards  

@@ -1,4 +1,4 @@
-# Inventory Operations Enhancement - Business Analysis Phase
+# Inventory Operations Enhancement - A Business Analysis Initiative
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ MapleDash Grocers, a simulated e-grocery retailer, operates a multi-warehouse fu
 A data-driven assessment revealed that operational challenges stem not from missing systems, but from execution gaps between physical warehouse activities and system-recorded inventory states. These gaps manifest as inventory inaccuracies, ATP overselling, uneven stock distribution, frequent replenishment exceptions, and preventable picking disruptions.
 
 This Business Analysis project defines a targeted IMS enhancement approach focused on system-directed execution, automated inventory updates, and exception-based human intervention across five core processes:
-- Inbound Receiving  
+- Receiving  
 - Putaway  
 - Cycle Counting  
 - Replenishment  

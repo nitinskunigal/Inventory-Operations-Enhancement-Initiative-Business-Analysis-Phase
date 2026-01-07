@@ -218,12 +218,12 @@ This ensures the solution is evidence-driven, testable, and defensible.
 
 ## 9. Repository Navigation and Links
 
-- **[Data Analysis Phase Repository](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-Initiative-Data-Analysis-Phase)**  
+- **[Data Analysis GitHub Repository](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-Initiative-Data-Analysis-Phase)**  
 - **[Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZmRmNGRhOGEtN2IyNi00ZWNjLTkxN2YtMmYyMzJhNzNhN2NmIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)**
-- **[Business Case](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-Initiative-Business-Analysis-Phase/blob/main/BA%20Deliverables/Business%20Case.pdf)**  
-- **[Business Requirements Document (BRD)](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-Initiative-Business-Analysis-Phase/blob/main/BA%20Deliverables/Business%20Requirements%20Document%20(BRD).pdf)**
-- **[Stakeholder Analysis & Interview Guide](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-Initiative-Business-Analysis-Phase/blob/main/BA%20Deliverables/Stakeholder%20Analysis%20%26%20Interview%20Guide.pdf)**
-- **[Current State & Future State Process Maps](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-Initiative-Business-Analysis-Phase/tree/main/BA%20Deliverables/Current%20State%20%26%20Future%20State%20Process%20Maps)**
-- **[System Context Diagram](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-Initiative-Business-Analysis-Phase/blob/main/BA%20Deliverables/System%20Context%20Diagram.png)**
-- **[Product Backlog & UAT](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-Initiative-Business-Analysis-Phase/tree/main/BA%20Deliverables/Product%20Backlog%20%26%20UAT)**
-- **[Use Case Diagrams, Use Case Specs, and Wireframes](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-Initiative-Business-Analysis-Phase/tree/main/BA%20Deliverables/Use%20Case%20Diagrams%2C%20Use%20Case%20Specs%2C%20and%20Wireframes)**
+- **[Business Case](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-A-Business-Analysis-Initiative/blob/main/BA%20Deliverables/Business%20Case.pdf)**  
+- **[Business Requirements Document (BRD)](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-A-Business-Analysis-Initiative/blob/main/BA%20Deliverables/Business%20Requirements%20Document%20(BRD).pdf)**
+- **[Stakeholder Analysis & Interview Guide](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-A-Business-Analysis-Initiative/blob/main/BA%20Deliverables/Stakeholder%20Analysis%20%26%20Interview%20Guide.pdf)**
+- **[Current State & Future State Process Maps](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-A-Business-Analysis-Initiative/tree/main/BA%20Deliverables/Current%20State%20%26%20Future%20State%20Process%20Maps)**
+- **[System Context Diagram](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-A-Business-Analysis-Initiative/blob/main/BA%20Deliverables/System%20Context%20Diagram.png)**
+- **[Product Backlog & UAT](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-A-Business-Analysis-Initiative/tree/main/BA%20Deliverables/Product%20Backlog%20%26%20UAT)**
+- **[Use Case Diagrams, Use Case Specs, and Wireframes](https://github.com/nitinskunigal/Inventory-Operations-Enhancement-A-Business-Analysis-Initiative/tree/main/BA%20Deliverables/Use%20Case%20Diagrams%2C%20Use%20Case%20Specs%2C%20and%20Wireframes)**

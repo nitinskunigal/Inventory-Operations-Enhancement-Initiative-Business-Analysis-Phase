@@ -22,9 +22,9 @@ The outcome is a disciplined, scalable inventory execution model that improves i
 ## Table of Contents
 
 - [1. Problem Statement and Strategic Context](#1-problem-statement-and-strategic-context)
-- [2. How Data Analysis Informed the Business Analysis](#2-how-data-analysis-informed-the-business-analysis)
-- [3. Solution Approach](#3-solution-approach)
-- [4. KPIs and Value Alignment](#4-kpis-and-value-alignment)
+- [2. Strategic Business Objectives](#2-strategic-business-objectives)
+- [3. How Data Analysis Informed the Business Analysis](#3-how-data-analysis-informed-the-business-analysis)
+- [4. Solution Approach](#4-solution-approach)
 - [5. Estimated Benefits and Expected Outcomes](#5-estimated-benefits-and-expected-outcomes)
 - [6. Limitations, Constraints, and Future Enhancement Opportunities](#6-limitations-constraints-and-future-enhancement-opportunities)
 - [7. Key Business Analysis Artifacts and Traceability](#7-key-business-analysis-artifacts-and-traceability)
@@ -34,13 +34,11 @@ The outcome is a disciplined, scalable inventory execution model that improves i
 
 MapleDash’s fulfillment model depends on accurate inventory visibility, reliable replenishment, and disciplined execution across multiple warehouses. As order volumes and SKU complexity increased, operational processes failed to scale at the same pace.
 
-The core problem is misalignment between physical inventory movements and system updates, leading to:
-
-- Delayed or inconsistent inventory synchronization after receiving, putaway, replenishment, and cycle counting  
-- Excessive supervisor intervention for routine discrepancies  
-- SKU-level stock imbalances masked by healthy-looking aggregate KPIs  
-- ATP overselling and pick-time shortages despite sufficient total inventory  
-- Reactive replenishment behavior driven by execution gaps rather than demand signals  
+The core issue is not missing systems, but misalignment between physical inventory movements and system updates. Receiving, putaway, replenishment, and cycle counts often complete physically before systems are validated.
+- Execution Gaps: These timing gaps distort ATP, leading to overselling and pick-time shortages.
+- Hidden Risk: Aggregate inventory looks healthy, but SKU-level imbalances and localized stockout risk are hidden.
+- Operational Impact: Because system data can’t be fully trusted, supervisors step in to manually resolve routine discrepancies, creating a reactive operating model.
+- Strategic Need: The organization doesn’t need new platforms. It needs stronger execution discipline, clearer system control points, and workflows that guide routine decisions automatically.
 
 Strategically, MapleDash does not need a full system replacement or advanced automation to resolve these challenges. What is required is stronger execution discipline, system-directed workflows for routine activities, and clear exception thresholds that focus human effort where it adds the most value.
 
@@ -48,11 +46,64 @@ This initiative directly addresses that need while remaining aligned with MapleD
 
 ---
 
-## 2. How Data Analysis Informed the Business Analysis
+## 2. Strategic Business Objectives
 
-This Business Analysis initiative is evidence-led. A dedicated Data Analysis was conducted during discovery using Power BI dashboards and KPI diagnostics to establish a fact-based understanding of MapleDash’s current-state operations before defining requirements or solutions.
+The primary objective of the MapleDash Inventory Management System (IMS) enhancement initiative is to improve inventory accuracy, operational reliability, and replenishment effectiveness while maintaining system simplicity and scalability appropriate for a mid-sized e-grocery organization.
+The following business objectives are Specific, Measurable, Achievable, Relevant, and Time-bound (SMART):
 
-The data analysis did **not** propose solutions. Instead, it surfaced where execution breaks down and where operational risk accumulates, enabling informed BA decisions.
+**Objective 1 – Improve Inventory Accuracy**  
+- *Aligned KPIs*: % SKUs Oversold (ATP < 0), % SKUs Below ROP, % SKUs Below Safety Stock, Median Sellable Coverage (Days), Total ATP Qty, Inventory Turnover (Annual), Days of Inventory, Days of Cover
+- *Specific*: Reduce discrepancies between physical stock and system-recorded inventory levels.
+- *Measurable*: Decrease inventory variance incidents (reflected through ATP overselling and ROP breaches) by at least 30%.
+- *Achievable*: Through system-directed cycle counting, real-time validations, and automated inventory updates.
+- *Relevant*: Inventory inaccuracies directly contribute to stockouts, overselling, and customer dissatisfaction.
+- *Time-bound*: Within 3 months of IMS enhancement rollout.
+
+**Objective 2 – Reduce Replenishment Exceptions and Stockout Risk**  
+- *Aligned KPIs*: % SKUs Below ROP, % SKUs Below Safety Stock, Days of Cover, Median Sellable Coverage (Days), Total ATP Qty, Avg. Daily Orders, Total Order Qty
+- *Specific*: Proactive replenishment for high-demand and high-risk SKUs; reduce firefighting.
+- *Measurable*: Reduce the percentage of SKUs falling below Reorder Point (ROP) by 20% and below Safety Stock by 15%.
+- *Achievable*: By introducing system-driven replenishment triggers aligned with demand patterns and SKU classification (ABC–XYZ).
+- *Relevant*: Frequent replenishment exceptions currently increase supervisor workload and stockout risk.
+- *Time-bound*: Within 4 months of implementation.
+
+**Objective 3 – Increase Inbound Processing Reliability**  
+- *Aligned KPIs*: % SKUs Oversold (ATP < 0), Total ATP Qty, Days of Cover, Total Orders, Total Revenue, Inventory Turnover
+- *Specific*: Improve the consistency and timeliness of inventory (QOH and ATP) updates.
+- *Measurable*: Ensure 95% of inbound receipts update Quantity on Hand (QOH) and ATP within 15 minutes of receiving completion.
+- *Achievable*: Through automated receipt validation, ASN matching, and reduced manual data entry.
+- *Relevant*: Delayed inbound updates cause ATP inaccuracies and downstream fulfillment issues.
+- *Time-bound*: Within 2 months of go-live.
+
+**Objective 4 – Reduce Manual Intervention and Supervisor Workload**  
+-	*Aligned KPIs*: % SKUs Oversold (ATP < 0), % SKUs Below ROP, Median Sellable Coverage (Days)
+-	*Specific*: Minimize the need for manual reviews and exception handling by supervisors.
+-	*Measurable*: Reduce supervisor intervention events related to inventory discrepancies by 25%.
+-	*Achievable*: By filtering exceptions to true anomalies and automating standard inventory updates.
+-	*Relevant*: Supervisors currently spend excessive time resolving preventable inventory issues.
+-	*Time-bound*: Within 3 months post-implementation.
+
+**Objective 5 – Improve Inventory Availability Without Increasing Stock Levels**  
+-	*Aligned KPIs*: Days of Cover, Median Sellable Coverage (Days), Total Inventory Value, Inventory Turnover (Annual), Value Expiring < 30 Days
+-	*Specific*: Improve effective inventory availability using existing stock levels; no capital inflation.
+-	*Measurable*: Improve Days of Cover efficiency (optimize coverage without increasing Total Inventory Value).
+-	*Achievable*: Through better SKU-level stock distribution and improved ATP accuracy rather than additional purchasing.
+-	*Relevant*: MapleDash aims to improve service levels without tying up additional working capital.
+-	*Time-bound*: Within 6 months of enhancement deployment.
+
+**Objective 6 – Establish a Foundation for Data-Driven Inventory Decisions**  
+-	*Aligned KPIs*: All 18 KPIs
+-	*Specific*: Enable consistent, reliable metrics for operational decision-making and governance.
+-	*Measurable*: Standardize KPI definitions and enable monthly operational reviews using consistent inventory dashboards.
+-	*Achievable*: By aligning IMS outputs with Power BI-based reporting already in use.
+-	*Relevant*: Data inconsistency currently limits trust in reports and hinders proactive management.
+-	*Time-bound*: Within 6 months of implementation.
+
+---
+
+## 3. How Data Analysis Informed the Business Analysis
+
+Before defining requirements or solutions as part of business analysis, a dedicated Data Analysis was conducted during discovery using Power BI as the analytical tool to establish a fact-based understanding of MapleDash’s current-state operations. The data analysis did not propose solutions. Instead, it surfaced where execution breaks down and where operational risk accumulates, enabling informed BA decisions.
 
 Key contributions of the data analysis phase included:
 
@@ -62,13 +113,7 @@ Key contributions of the data analysis phase included:
 - Highlighting warehouse-level throughput imbalance across fulfillment centers  
 - Providing supplier reliability context (OTD%, lead time variability, supplier concentration) as an external risk factor, not a system failure  
 
-These insights directly informed:
-
-- TO-BE process design decisions  
-- Business rules and exception thresholds  
-- Automation boundaries  
-- KPI selection and success metrics  
-- Scope and constraints defined in the Business Case and BRD  
+These insights directly shaped future state process design, particularly where system control points were required. In the next few slides, we’ll look at the detailed insights & data-indicated root causes derived from data analysis.
 
 In short, data analysis diagnosed the problem space, while business analysis translated those signals into structured requirements and solution design. 
 
@@ -76,53 +121,28 @@ In short, data analysis diagnosed the problem space, while business analysis tra
 
 ---
 
-## 3. Solution Approach
+## 4. Solution Approach
 
 The proposed solution is a **process-led IMS enhancement**, not a technology overhaul. It strengthens how inventory decisions are executed, validated, and recorded across the warehouse network.
 
 ### Core Design Principles
 
-**System-Directed, Not System-Replaced**  
-The IMS actively guides routine work such as receiving validation, putaway location selection, replenishment triggers, risk-based cycle count task generation, and automated pick task creation.
+**System-Directed Execution**  
+Routine decisions such as receiving validation, putaway location selection, replenishment triggers, cycle count task generation, and pick task creation are system-directed. Basically, this removes reliance on individual judgment for routine actions and execution becomes consistent across warehouses.
 
-**Automation with Control Points**  
-Inventory updates occur automatically only after validated execution steps, ensuring Quantity on Hand (QOH) and Available-to-Promise (ATP) reflect physical reality rather than assumptions.
+**Automation Inventory Updates at Control Points**  
+Inventory updates occur automatically only after validated execution steps, ensuring Quantity on Hand (QOH) and Available-to-Promise (ATP) reflect physical reality rather than assumptions. Basically, this directly addresses ATP overselling and delayed inventory synchronization.
 
 **Exception-Based Human Intervention**  
 Supervisors are engaged only when predefined tolerance thresholds are breached. Routine activities proceed without manual approval, reducing firefighting and cognitive load.
 
 **Single Version of Inventory Truth**  
-Inventory deductions and adjustments occur at clearly defined control points, eliminating duplicate updates and reconciliation confusion.
+Inventory deductions and adjustments occur at clearly defined control points, eliminating duplicate updates and reconciliation confusion. Basically, this stabilizes downstream processes like picking and replenishment.
 
 **Pragmatic Integration**  
-Data synchronization between IMS, WMS, and OMS is lightweight and reliability-focused, avoiding real-time orchestration complexity.
+Data synchronization between IMS, WMS, and OMS is lightweight and reliability-focused, avoiding real-time orchestration complexity. Basically, this keeps the solution aligned with company’s current maturity.
 
 Together, these principles convert inventory operations from reactive and manual to disciplined, scalable, and auditable while remaining appropriate for a mid-sized e-grocery organization.
-
----
-
-## 4. KPIs and Value Alignment
-
-KPI alignment ensures that the proposed solution delivers measurable business value, not just process improvement. The IMS enhancements are explicitly designed to influence execution-driven KPIs that reflect inventory accuracy, availability, and operational stability.
-
-### How the Solution Impacts Key KPIs
-
-- **Inventory Accuracy & Availability**:
-Improved execution discipline and controlled inventory updates reduce ATP overselling, stabilize Total ATP Quantity, and improve Inventory Turnover, Days of Inventory, Days of Cover, and Median Sellable Coverage.
-
-- **Replenishment & Stock Control**:
-System-driven replenishment triggers and exception thresholds reduce the percentage of SKUs falling below Reorder Point (ROP) and Safety Stock.
-
-- **Risk & Loss Exposure**:
-Better putaway discipline, FEFO enforcement, and timely adjustments reduce expiry exposure and protect unit economics.
-
-- **Demand & Fulfillment Context**:
-Improved execution stability supports consistent fulfillment performance under volatile demand without overreactive manual intervention.
-
-- **Supplier Risk Context (Observed, Not Controlled)**:
-Supplier OTD%, lead time, and concentration metrics are monitored as external risk indicators that inform execution safeguards, not as levers controlled by this project.
-
-These KPIs form the basis for post-implementation monitoring and benefits realization tracking.
 
 ---
 
@@ -201,17 +221,6 @@ This repository contains a complete, industry-aligned set of Business Analysis a
 - **Traceability Matrix:** Business Requirements → Functional Requirements → User Stories → KPIs  
 - **UAT Artifacts:** Scenarios, test cases, defect log, sign-off templates  
 - **Low-Fidelity Wireframes:** Operational system interactions for requirement clarity  
-
-### Core Deliverables
-
-Every requirement and design decision is traceable back to:
-
-- Data analysis insights
-- Defined business objectives
-- Measurable inventory KPIs
-- Validated operational risks
-
-This ensures the solution is evidence-driven, testable, and defensible.
 
 ---
 
